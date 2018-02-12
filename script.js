@@ -28,6 +28,12 @@ $(document).ready(function() {
         $search.focus();
     });
 
+    $("span[name='github']").click(function() {
+        var curr = $search.val();
+        $search.val("!gh " + curr);
+        $search.focus();
+    });
+
     //Tabs
 
     $(".stripe").mouseenter(function() {
